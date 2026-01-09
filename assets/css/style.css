@@ -25,6 +25,7 @@ body {
     color: var(--text-dark);
     background-color: var(--light-gray);
     line-height: 1.6;
+    padding-bottom: 70px;
 }
 
 .container {
