@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>礼品分类 | 芭利礼品兑换平台</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar Templates -->
+    <template id="navbar-template">
+        <span id="logo-text">芭利礼品</span>
+        <a id="nav-link-home" href="/">首页</a>
+        <a id="nav-link-categories" href="/categories.html">礼品分类</a>
+        <a id="nav-link-business" href="/business.html">企业服务</a>
+        <a id="nav-link-about" href="/about.html">关于我们</a>
+        <span id="cart-label">购物车</span>
+        <span id="user-label">登</span>
+    </template>
+
+    <!-- Gift Card Templates -->
+    <template id="gift-card-template">
+        <span id="gift-value-label">所需礼品卡</span>
+        <button id="gift-exchange-btn">立即兑换</button>
+    </template>
+
+    <!-- Footer Templates -->
+    <template id="footer-template">
+        <span id="footer-logo-text">芭利礼品</span>
+        <p id="footer-description">高端礼品专属兑换平台，企业礼赠首选，为您提供尊贵体验。</p>
+        <h3 id="footer-quick-links">快速链接</h3>
+        <a id="footer-link-home" href="/">首页</a>
+        <a id="footer-link-categories" href="/categories.html">礼品分类</a>
+        <a id="footer-link-business" href="/business">企业服务</a>
+        <a id="footer-link-about" href="/about.html">关于我们</a>
+        <h3 id="footer-help-center">帮助中心</h3>
+        <a id="footer-link-faq" href="/faq">常见问题</a>
+        <a id="footer-link-contact" href="/contact">联系我们</a>
+        <a id="footer-link-shipping" href="/shipping">配送信息</a>
+        <a id="footer-link-returns" href="/returns">退换政策</a>
+        <h3 id="footer-contact-us">联系我们</h3>
+        <span id="footer-phone">客服电话: 400-888-8888</span>
+        <span id="footer-email">邮箱: service@baligift.com</span>
+        <span id="footer-time">工作时间: 9:00-18:00</span>
+        <span id="footer-address">地址: 上海市浦东新区张江高科技园区</span>
+        <p id="footer-copyright">© 2023 芭利礼品兑换平台. 保留所有权利. 沪ICP备12345678号</p>
+    </template>
+
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Category Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>探索精美礼品</h1>
+                    <p>挑选您的专属礼品</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Categories -->
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">所有分类</h2>
+                <div class="categories-grid expanded">
+                    <category-card title="数码电子" icon="phone" color="var(--blue)"></category-card>
+                    <category-card title="食品生鲜" icon="shopping-bag" color="var(--green)"></category-card>
+                    <category-card title="高端礼盒" icon="gift" color="var(--gold)"></category-card>
+                    <category-card title="家居生活" icon="home" color="var(--teal)"></category-card>
+                    <category-card title="时尚配饰" icon="watch" color="var(--purple)"></category-card>
+                    <category-card title="美妆护肤" icon="heart" color="var(--pink)"></category-card>
+                    <category-card title="健康养生" icon="activity" color="var(--red)"></category-card>
+                    <category-card title="旅游体验" icon="globe" color="var(--indigo)"></category-card>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Gifts by Category -->
+        <section class="featured-gifts">
+            <div class="container">
+                <h2 class="section-title">热门礼品</h2>
+                
+                <h3 class="subcategory-title">数码电子</h3>
+                <div class="gifts-grid">
+                    <gift-card title="iPhone 15 Pro" value="8000" image="http://static.photos/technology/640x360/2" category="数码电子"></gift-card>
+                    <gift-card title="华为 MateBook" value="12000" image="http://static.photos/technology/640x360/5" category="数码电子"></gift-card>
+                    <gift-card title="索尼 PS5" value="4000" image="http://static.photos/technology/640x360/6" category="数码电子"></gift-card>
+                    <gift-card title="Bose 耳机" value="2800" image="http://static.photos/technology/640x360/7" category="数码电子"></gift-card>
+                </div>
+
+                <h3 class="subcategory-title">高端礼盒</h3>
+                <div class="gifts-grid">
+                    <gift-card title="飞天茅台礼盒" value="3000" image="http://static.photos/food/640x360/1" category="高端礼盒"></gift-card>
+                    <gift-card title="法国红酒套装" value="2500" image="http://static.photos/food/640x360/8" category="高端礼盒"></gift-card>
+                    <gift-card title="燕窝滋补礼盒" value="1800" image="http://static.photos/food/640x360/9" category="高端礼盒"></gift-card>
+                    <gift-card title="日本和牛礼盒" value="3200" image="http://static.photos/food/640x360/10" category="高端礼盒"></gift-card>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+    
+    <script src="../assets/js/components/navbar.js"></script>
+    <script src="../assets/js/components/footer.js"></script>
+    <script src="../assets/js/components/gift-card.js"></script>
+    <script src="../assets/js/components/category-card.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
