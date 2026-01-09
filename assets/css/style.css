@@ -26,6 +26,7 @@ body {
     background-color: var(--light-gray);
     line-height: 1.6;
     padding-bottom: 70px;
+    padding-top: 50px;
 }
 
 .container {
@@ -39,11 +40,11 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--dark-blue), #1a365d);
     color: var(--white);
-    padding: 60px 0 40px 0;
+    padding: 40px 0 40px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
-    margin-top: 60px;
+    margin-top: 0;
 }
 
 .hero::before {
